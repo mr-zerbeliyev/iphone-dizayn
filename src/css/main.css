@@ -1,0 +1,373 @@
+@import url(./header.css);
+@import url(./swiper.css);
+@import url(./footer.css);
+@import url(./media.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style-type: none;
+    transition: .5s;
+}
+
+p {
+    color: #777
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: #ff556e;
+    border-radius: 8px;
+}
+ .hamburger{
+    display: none;
+ }
+/* navbar */
+
+
+nav {
+    background-color: #f7fafd;
+    position: fixed;
+    z-index: 2;
+    padding: 30px 30px;
+    align-items: center;
+    font-size: 14px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    box-shadow: 1px 0 10px rgb(121, 120, 120);
+}
+
+.nav__logo {
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+
+}
+
+.nav__link {
+    align-items: center;
+    height: 40px;
+    color: black;
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+}
+
+.nav__link a {
+    color: #333;
+    font-weight: 700;
+}
+
+.nav__link a:hover {
+    color: #ff556e;
+
+}
+
+.download {
+    border: 2px solid #ff556e;
+    padding: 10px 25px;
+    border-radius: 25px;
+    color: #ff556e !important;
+}
+
+.download:hover {
+    color: #fff !important;
+    background: #ff556e;
+
+}
+
+/* navbar end */
+main {
+    padding-bottom: 50px;
+}
+
+.features__text {
+    line-height: 1.5;
+    margin: auto;
+    width: 65%;
+    text-align: center;
+
+}
+
+.features__text h1 {
+    font-size: 40px;
+    color: #333;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.features__box {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.features__header__left {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.features__left {
+    display: flex;
+    flex-direction: row-reverse;
+    line-height: 1.5;
+    text-align: right;
+}
+
+.features__left__box {
+    margin-top: 20px;
+    margin-right: 20px;
+    width: 300px;
+}
+
+.before__icons {
+    margin-top: 20px;
+}
+
+.before__icons i {
+    margin-right: 20px;
+    font-size: 30px;
+    padding: 20px 20px
+}
+
+.features__img {
+    width: 300px;
+}
+
+.features__img img {
+    width: 100%;
+    height: 600px;
+
+}
+
+.features__right {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 65px;
+
+}
+
+.features__right i {
+    font-size: 30px;
+    padding: 20px 20px
+}
+
+.features__right__box {
+    display: flex;
+    margin-left: 20px;
+}
+
+.features__right__icons {
+    margin: 0px 20px;
+}
+
+.features__right__text__box {
+    width: 300px;
+    line-height: 1.5;
+}
+
+.testimonials__box {
+    background-color: #f7fafd;
+    padding-top: 7%;
+    height: auto;
+    padding-bottom: 50px;
+
+}
+
+.user__box {
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.star i {
+    text-align: center;
+    color: orange;
+    font-size: 20px;
+    padding: 0;
+    padding-right: 3px;
+    margin: 20px 0;
+}
+
+.testimonials__text {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.testimonials__text__box {
+    width: 380px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 50px;
+}
+
+.testimonials__text__box p {
+    padding-bottom: 10px;
+}
+
+.png__image {
+    background-color: #fff;
+    width: 75%;
+    height: 100px;
+    margin: 50px auto;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+
+}
+
+.number__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 100px 0px;
+    background-color: #e8eff6;
+}
+
+.number__card__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.number__card__box h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    padding-bottom: 5px;
+    color: #333;
+}
+
+.number__card__box i {
+    background-color: #e8eff6;
+    padding-bottom: 10px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.number__card__box h4 {
+    color: #777;
+}
+
+.download__extra {
+    position: relative;
+    background-color: #f7fafd;
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    overflow: hidden;
+    padding-bottom: 100px;
+
+}
+
+.download__iphone {
+    width: 60%;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.download__iphone img {
+    width: 100%;
+}
+
+.download__iphone__text {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.download__extra__link {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.download__extra__link a {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    border: 2px solid #ff556e;
+    border-radius: 25px;
+    color: white;
+    background-color: #ff556e;
+}
+
+.download__extra__link a:hover {
+    background-color: #fff;
+    color: #ff556e;
+}
+
+.download__extra__link i {
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.iphone__circle__box {
+    position: absolute;
+    width: 500px;
+    right: -20%;
+    top: 15%;
+
+}
+
+.iphone__circle__box img {
+    width: 100%;
+
+}
+
+.iphone__green_daimond {
+    position: absolute;
+    top: 10%;
+    width: 30px;
+    right: 20%;
+
+}
+
+.iphone__blue_daimon {
+    position: absolute;
+    width: 80px;
+    right: 10%;
+    top: 35%;
+}
+
+.iphone__white__box {
+    position: absolute;
+    width: 400px;
+    top: 40%;
+    left: -15%;
+
+
+}
+
+.iphone__white__box img {
+    width: 100%;
+}
+
+.iphone__yellow__box{
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    left: 8%;
+}
